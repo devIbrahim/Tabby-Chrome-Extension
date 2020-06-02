@@ -1,5 +1,60 @@
+@mixin flex-center($dir, $jus) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  @include flex-center(row, center);
+}
+
+div,
+p,
+span {
+  color: white;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) center
+      no-repeat,
+    url(../images/bg.jpg);
+}
+
+.app-child-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.app {
+  height: 40em;
+  width: 1040px;
+  @include flex-center(row, space-between);
+}
+
+.app > div {
+  @include flex-center(column, space-between);
+  height: 100%;
+}
+
+.time-spans {
+  font-size: 8rem;
+  font-weight: 500;
+}
+
+.greet {
+  font-size: 2.3rem;
+  line-height: 2.8rem;
+  margin-top: -2rem;
 }
