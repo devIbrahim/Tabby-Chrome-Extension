@@ -130,4 +130,35 @@ body {
   width: 700px;
   text-align: center;
 }
+
+.greet-name {
+  font-size: 2.7rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: capitalize;
+}
+
+.greet-name::-webkit-input-placeholder {
+  color: #b9b9b9;
+}
+
+.greet-name:-ms-input-placeholder {
+  color: #b9b9b9;
+}
+
+.greet-name::-ms-input-placeholder {
+  color: #b9b9b9;
+}
+
+.greet-name::placeholder {
+  color: #b9b9b9;
+}
+
+.input-hover {
+  cursor: pointer;
+}
 /*# sourceMappingURL=styles.css.map */

@@ -4,6 +4,8 @@ const FEcountry = document.querySelector(".country");
 const FEhours = document.querySelector(".hours");
 const FEminutes = document.querySelector(".minutes");
 const greetMsg = document.querySelector(".greetMsg");
+const nameForm = document.querySelector(".name-form");
+const nameInput = document.querySelector(".greet-name");
 
 // SHOW WEATHER DATA
 function showWeather(data) {
@@ -55,4 +57,19 @@ function greet(h) {
   } else {
     greetMsg.textContent = "Evening";
   }
+}
+
+nameForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  localStorage.setItem("username", nameForm["name"].value.trim());
+  nameForm["name"].blur();
+  if (localStorage.getItem("username")) {
+    nameInput.value = localStorage.getItem("username") + ".";
+    nameInput.classList.add("input-hover");
+  }
+});
+
+if (localStorage.getItem("username")) {
+  nameInput.value = localStorage.getItem("username") + ".";
+  nameInput.classList.add("input-hover");
 }

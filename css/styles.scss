@@ -90,3 +90,21 @@ body {
   width: 700px;
   text-align: center;
 }
+
+.greet-name {
+  font-size: 2.7rem;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  text-transform: capitalize;
+  &::placeholder {
+    color: rgb(185, 185, 185);
+  }
+}
+
+.input-hover {
+  cursor: pointer;
+}
