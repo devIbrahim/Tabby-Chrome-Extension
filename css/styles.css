@@ -31,8 +31,8 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: "Poppins", sans-serif;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))) center no-repeat, url(../images/bg.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)) center no-repeat, url(../images/bg.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))) center no-repeat, url(../images/bg.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)) center no-repeat, url(../images/bg.jpg);
 }
 
 .app-child-left {
@@ -53,7 +53,7 @@ body {
 
 .app {
   height: 40em;
-  width: 1040px;
+  width: 1140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,14 +86,48 @@ body {
   height: 100%;
 }
 
-.time-spans {
+.app-child-left {
+  -webkit-box-align: stretch !important;
+      -ms-flex-align: stretch !important;
+          align-items: stretch !important;
+}
+
+.time {
   font-size: 8rem;
   font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .greet {
-  font-size: 2.3rem;
+  font-size: 2.7rem;
   line-height: 2.8rem;
   margin-top: -2rem;
+}
+
+.temp {
+  font-size: 4.7rem;
+  font-weight: 500;
+}
+
+.temp-c {
+  font-size: 4rem;
+}
+
+.weather-location {
+  font-size: 1.7rem;
+  margin-top: -1.3rem;
+}
+
+.notes-widget {
+  background: white;
+  height: 450px;
+  width: 45em;
+  margin-top: 2.85rem;
+}
+
+.quote {
+  font-size: 1.1rem;
+  width: 700px;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */
