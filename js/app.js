@@ -51,11 +51,11 @@ setInterval(showTime, 1000);
 
 function greet(h) {
   if (h < 12) {
-    greetMsg.textContent = "Morning";
+    greetMsg.textContent = "morning";
   } else if (h < 18) {
-    greetMsg.textContent = "Afternoon";
+    greetMsg.textContent = "afternoon";
   } else {
-    greetMsg.textContent = "Evening";
+    greetMsg.textContent = "evening";
   }
 }
 
@@ -73,3 +73,10 @@ if (localStorage.getItem("username")) {
   nameInput.value = localStorage.getItem("username") + ".";
   nameInput.classList.add("input-hover");
 }
+
+const optionList = document.querySelector(".btn-list");
+optionList.addEventListener("click", (e) => {
+  if (e.target.tagName == "BUTTON") {
+    e.target.classList.toggle("active");
+  }
+});

@@ -53,7 +53,7 @@ body {
 
 .app {
   height: 40em;
-  width: 1140px;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,8 +100,8 @@ body {
 
 .greet {
   font-size: 2.7rem;
-  line-height: 2.8rem;
-  margin-top: -2rem;
+  line-height: 2rem;
+  margin-top: -1rem;
 }
 
 .temp {
@@ -121,8 +121,21 @@ body {
 .notes-widget {
   background: white;
   height: 450px;
-  width: 45em;
+  width: 50em;
   margin-top: 2.85rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .quote {
@@ -160,5 +173,149 @@ body {
 
 .input-hover {
   cursor: pointer;
+}
+
+.notes-section-left {
+  width: 40em;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notes-section-left .editor {
+  width: 100%;
+  height: 85%;
+  overflow-y: scroll;
+}
+
+.notes-section-left .editor .note-heading {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #a3a3a3;
+}
+
+.notes-section-left .editor .note-content {
+  color: black;
+  padding: 0.5rem 1rem 2rem 1rem;
+  outline: none;
+  font-size: 1.1rem;
+}
+
+.notes-section-left .options {
+  height: 15%;
+  width: 100%;
+  border-top: 1px solid #a3a3a3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+}
+
+.notes-section-left .options .btn-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 14rem;
+}
+
+.notes-section-left .options .btn-list .options-btn {
+  background: #979797;
+  border: none;
+  color: white;
+  font-size: 1.4rem;
+  width: 40px;
+  height: 40px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  outline: none;
+}
+
+.notes-section-left .options .btn-list .bold {
+  font-weight: 600;
+}
+
+.notes-section-left .options .btn-list .italic {
+  font-family: serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.notes-section-left .options .btn-list .underline {
+  text-decoration: underline;
+}
+
+.notes-section-left .options .btn-list .striked {
+  text-decoration: line-through;
+  font-weight: 300;
+}
+
+.notes-section-left .options .btn-list .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.notes-section-left .options .btn-list .list img {
+  pointer-events: none;
+}
+
+.notes-section-right {
+  height: 100%;
+  width: 15em;
+  background: #ededed;
+}
+
+.active {
+  background: #525252 0 !important;
 }
 /*# sourceMappingURL=styles.css.map */

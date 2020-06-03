@@ -39,7 +39,7 @@ body {
 
 .app {
   height: 40em;
-  width: 1140px;
+  width: 1200px;
   @include flex-center(row, space-between);
 }
 
@@ -60,8 +60,8 @@ body {
 
 .greet {
   font-size: 2.7rem;
-  line-height: 2.8rem;
-  margin-top: -2rem;
+  line-height: 2rem;
+  margin-top: -1rem;
 }
 
 .temp {
@@ -81,8 +81,9 @@ body {
 .notes-widget {
   background: white; //#171717 - dark
   height: 450px;
-  width: 45em;
+  width: 50em;
   margin-top: 2.85rem;
+  @include flex-center(row, space-between);
 }
 
 .quote {
@@ -107,4 +108,87 @@ body {
 
 .input-hover {
   cursor: pointer;
+}
+
+.notes-section-left {
+  width: 40em;
+  height: 100%;
+  @include flex-center(column, space-between);
+  .editor {
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    .note-heading {
+      width: 100%;
+      font-family: "Poppins", sans-serif;
+      font-size: 2.4rem;
+      padding: 0.5rem 1rem;
+      outline: none;
+      border: none;
+      font-weight: 500;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #a3a3a3;
+    }
+    .note-content {
+      color: black;
+      padding: 0.5rem 1rem 2rem 1rem;
+      outline: none;
+      font-size: 1.1rem;
+    }
+  }
+  .options {
+    height: 15%;
+    width: 100%;
+    border-top: 1px solid #a3a3a3;
+    @include flex-center(row, space-between);
+    padding: 0 1rem;
+    .btn-list {
+      @include flex-center(row, space-between);
+      width: 14rem;
+      .options-btn {
+        background: #979797;
+        border: none;
+        color: white;
+        font-size: 1.4rem;
+        width: 40px;
+        height: 40px;
+        font-family: "Poppins", sans-serif;
+        cursor: pointer;
+        outline: none;
+      }
+      .bold {
+        font-weight: 600;
+      }
+      .italic {
+        font-family: serif;
+        font-style: italic;
+        font-weight: 500;
+      }
+      .underline {
+        text-decoration: underline;
+      }
+      .striked {
+        text-decoration: line-through;
+        font-weight: 300;
+      }
+      .list {
+        @include flex-center(row, center);
+        img {
+          pointer-events: none;
+        }
+      }
+    }
+  }
+}
+
+.notes-section-right {
+  height: 100%;
+  width: 15em;
+  background: #ededed;
+}
+
+.active {
+  background: rgb(82, 82, 82) 000 !important;
 }

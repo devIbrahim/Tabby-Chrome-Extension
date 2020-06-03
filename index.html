@@ -48,7 +48,46 @@
       </div>
 
       <div class="app-child-right">
-        <div class="notes-widget"></div>
+        <div class="notes-widget">
+          <div class="notes-section-left">
+            <div class="editor">
+              <input
+                spellcheck="false"
+                type="text"
+                value="Untitled-1"
+                class="note-heading"
+              />
+              <div class="note-content" contenteditable="true">
+                I am currently making a productive, new-tab page extension for
+                the chrome browser which greets the user, shows them the time,
+                weather, inspirational quotes and also allows the user to take
+                notes and store them locally on their computer.
+              </div>
+            </div>
+            <div class="options">
+              <div class="btn-list">
+                <button data-command="bold" class="options-btn bold">B</button>
+                <button data-command="italic" class="options-btn italic">
+                  I
+                </button>
+                <button data-command="underline" class="options-btn underline">
+                  U
+                </button>
+                <button data-command="" class="options-btn striked">ab</button>
+                <button data-command="bold" class="options-btn list">
+                  <img src="./images/list.svg" alt="" />
+                </button>
+              </div>
+              <div class="remove-note-div">
+                <button class="delete-note">D</button>
+              </div>
+            </div>
+          </div>
+          <div class="notes-section-right">
+            <div class="addNsearch"></div>
+            <div class="notes-list"></div>
+          </div>
+        </div>
         <div class="quote">
           “Darkness cannot drive out darkness: only light can do that. Hate
           cannot drive out hate: only love can do that.”
